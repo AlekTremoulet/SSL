@@ -3,9 +3,9 @@
 #include <string.h> 
 int main(void){
     FILE *salida;
-    
-   if (( salida = fopen ("output.txt","w"))){
     char nombre[20] = "Hola Alek Tremoulet!";
+    printf(nombre);
+   if (( salida = fopen ("output.txt","w"))){
     fwrite(nombre,sizeof(char),20,salida);
     }
     else 
